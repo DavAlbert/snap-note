@@ -13,8 +13,11 @@
 <body>
 <div class="page">
     <h1 class="description">[ Paste text - CTRL + S to save ]</h1>
-    <textarea autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="paste-text-box" name="paste"></textarea>
+    <form method="post" th:action="@{/}">
+        <textarea autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="paste-text-box" name="paste"></textarea>
+    </form>
 </div>
+<script th:src="@{/js/jquery.min.js}"></script>
 <script th:src="@{/js/main.js}"></script>
 </body>
 </html>
