@@ -1,0 +1,14 @@
+.paste-text-box {
+    border: none;
+    display: block;
+    background-color: $background-color;
+    width: 95%;
+    height: 90vh;
+    font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
+    color: $primary-color;
+    font-size: 1.4em;
+    resize: none;
+    &:focus {
+        outline: 0;
+    }
+}
