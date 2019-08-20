@@ -11,7 +11,7 @@ import ru.garkolym.snapnote.models.Paste;
 import ru.garkolym.snapnote.requests.PasteRequest;
 import ru.garkolym.snapnote.services.PasteService;
 
-import javax.persistence.EntityNotFoundException;
+import java.util.Optional;
 
 @Controller
 public class PasteController {
@@ -36,8 +36,11 @@ public class PasteController {
 
     @RequestMapping("{identity}")
     public String find(@PathVariable String identity, Model model) {
-        Paste paste = pasteService.findPaste(identity).orElseThrow(EntityNotFoundException::new);
-        model.addAttribute("message", paste.getMessage());
+        Optional<Paste> paste = pasteService.findPaste(identity);
+        if (!paste.isPresent()) {
+            return "redirect:/";
+        }
+        model.addAttribute("message", paste.get().getMessage());
         return "paste";
     }
 }
