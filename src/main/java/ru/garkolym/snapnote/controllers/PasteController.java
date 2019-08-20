@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class PasteController {
 
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping("/")
     public String index() {
         return "index";
     }
