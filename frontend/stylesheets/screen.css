@@ -104,33 +104,31 @@ body {
   background-color: #1b1b1b;
   width: 95%;
   height: 90vh;
-  font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
   color: #da3737;
   font-size: 1.4em;
   resize: none;
 }
-/* line 11, ../sass/_paste-text-box.scss */
+/* line 10, ../sass/_paste-text-box.scss */
 .paste-text-box:focus {
   outline: 0;
 }
 
-/* line 15, ../sass/_paste-text-box.scss */
+/* line 14, ../sass/_paste-text-box.scss */
 form {
   width: 95%;
 }
-/* line 17, ../sass/_paste-text-box.scss */
+/* line 16, ../sass/_paste-text-box.scss */
 form .paste-text-box {
   border: none;
   display: block;
   background-color: #1b1b1b;
   width: 100%;
   height: 90vh;
-  font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
   color: #da3737;
   font-size: 1.4em;
   resize: none;
 }
-/* line 27, ../sass/_paste-text-box.scss */
+/* line 25, ../sass/_paste-text-box.scss */
 form .paste-text-box:focus {
   outline: 0;
 }
